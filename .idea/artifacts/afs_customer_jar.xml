@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="afs.customer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/afs_customer_jar</output-path>
+    <root id="archive" name="afs.customer.jar">
+      <element id="module-output" name="afs.customer" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="afs.core:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/afs_core_jar</output-path>
+    <root id="archive" name="afs.core.jar">
+      <element id="module-output" name="afs.core" />
+    </root>
+  </artifact>
+</component>

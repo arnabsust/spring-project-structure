@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/afs.iml" filepath="$PROJECT_DIR$/afs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/afs.core/afs.core.iml" filepath="$PROJECT_DIR$/core/afs.core/afs.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/afs.customer/afs.customer.iml" filepath="$PROJECT_DIR$/core/afs.customer/afs.customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/afs.employee/afs.employee.iml" filepath="$PROJECT_DIR$/core/afs.employee/afs.employee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/afs.office/afs.office.iml" filepath="$PROJECT_DIR$/core/afs.office/afs.office.iml" />
+    </modules>
+  </component>
+</project>

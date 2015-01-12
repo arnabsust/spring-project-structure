@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="afs.office:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/afs_office_jar</output-path>
+    <root id="archive" name="afs.office.jar">
+      <element id="module-output" name="afs.office" />
+    </root>
+  </artifact>
+</component>

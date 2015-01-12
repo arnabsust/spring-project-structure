@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="afs.employee:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/afs_employee_jar</output-path>
+    <root id="archive" name="afs.employee.jar">
+      <element id="module-output" name="afs.employee" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="afs:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="afs.war">
+      <element id="artifact" artifact-name="afs:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib" />
+        <element id="directory" name="classes" />
+      </element>
+    </root>
+  </artifact>
+</component>
