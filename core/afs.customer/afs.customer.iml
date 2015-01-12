@@ -24,5 +24,6 @@
     <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.common:hibernate-commons-annotations:4.0.5.Final" level="project" />
     <orderEntry type="module" module-name="afs.core" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.1.3.RELEASE" level="project" />
   </component>
 </module>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/afs.iml" filepath="$PROJECT_DIR$/afs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/afs.config/afs.config.iml" filepath="$PROJECT_DIR$/core/afs.config/afs.config.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/afs.core/afs.core.iml" filepath="$PROJECT_DIR$/core/afs.core/afs.core.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/afs.customer/afs.customer.iml" filepath="$PROJECT_DIR$/core/afs.customer/afs.customer.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/afs.employee/afs.employee.iml" filepath="$PROJECT_DIR$/core/afs.employee/afs.employee.iml" />

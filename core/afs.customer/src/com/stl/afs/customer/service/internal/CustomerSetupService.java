@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by ARNAB on 1/10/2015.
  */
-class CustomerSetupService implements ICustomerSetupService {
+public class CustomerSetupService implements ICustomerSetupService {
     private CustomerSetupDao customerSetupDao;
     private IEmployeeSetupService employeeSetupService;
 
@@ -22,7 +22,7 @@ class CustomerSetupService implements ICustomerSetupService {
 
     @Override
     public List<Customer> getAllCustomer() {
-        List<Employee> employeeList = employeeSetupService.getAllEmployee();
+        //List<Employee> employeeList = employeeSetupService.getAllEmployee();
         return customerSetupDao.getAllCustomer();
     }
 

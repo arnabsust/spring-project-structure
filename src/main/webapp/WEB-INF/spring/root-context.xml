@@ -11,6 +11,8 @@
 		request. * 4. session – Return a single bean instance per HTTP session. * 
 		5. globalSession – Return a single bean instance per global HTTP session.* -->
 
-	<import resource="moduleConfig/customer-root-context.xml" />
+	<!--<import resource="moduleConfig/customer-root-context.xml" />-->
+
+	<!--<bean class="com.stl.afs.customer.config.CustomerSetupConfig" />-->
 
 </beans>
