@@ -9,26 +9,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.Lazy;
 
 /**
  * Created by ARNAB on 1/12/2015.
  */
 @Configuration
-@Import({DataSourceConfig.class})
+@Lazy
 public class CustomerSetupConfig {
-    @Autowired private DataSourceConfig dataSourceConfig;
-
-    @Bean(name="customerSetupService")
-    public ICustomerSetupService customerSetupService(){
-        CustomerSetupService customerSetupService = new CustomerSetupService();
-        customerSetupService.setCustomerSetupDao(customerSetupDao());
-        return customerSetupService;
-    }
 
     @Bean(name="customerSetupDao")
     public CustomerSetupDao customerSetupDao(){
-        //CustomerSetupDao customerSetupDao = new CustomerSetupDao(dataSourceConfig.sessionFactory());
-        //customerSetupDao.setSessionFactory(dataSourceConfig.sessionFactory());
         return new CustomerSetupDao();
     }
+
+    @Bean(name="customerSetupService")
+    public ICustomerSetupService customerSetupService(){
+//        CustomerSetupService customerSetupService = new CustomerSetupService();
+//        customerSetupService.setCustomerSetupDao(customerSetupDao());
+        return new CustomerSetupService();
+    }
+
 }

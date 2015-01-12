@@ -15,6 +15,10 @@ public class CustomerSetupDao {
     @Autowired
     private SessionFactory sessionFactory;
 
+    public CustomerSetupDao() {
+        System.out.println("----Customer Setup Dao----");
+    }
+
     public String getCustomerName(Integer customerID) {
         return "Hasib Hasan Tarafder";
     }

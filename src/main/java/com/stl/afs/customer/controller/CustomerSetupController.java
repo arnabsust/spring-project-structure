@@ -12,7 +12,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping("/customer")
 public class CustomerSetupController {
+
     private ICustomerSetupService customerSetupService;
+
+    public CustomerSetupController() {
+        System.out.println("----Customer Setup Controller----");
+    }
 
     @RequestMapping(method = RequestMethod.GET)
     public String index(ModelMap model){

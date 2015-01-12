@@ -5,6 +5,7 @@ import com.stl.afs.customer.domain.entity.Customer;
 import com.stl.afs.customer.service.ICustomerSetupService;
 import com.stl.afs.employee.domain.entity.Employee;
 import com.stl.afs.employee.service.IEmployeeSetupService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
@@ -12,8 +13,13 @@ import java.util.List;
  * Created by ARNAB on 1/10/2015.
  */
 public class CustomerSetupService implements ICustomerSetupService {
+    @Autowired
     private CustomerSetupDao customerSetupDao;
     private IEmployeeSetupService employeeSetupService;
+
+    public CustomerSetupService() {
+        System.out.println("----Customer Setup Service----");
+    }
 
     @Override
     public String getCustomerName(Integer customerID) {
@@ -26,9 +32,9 @@ public class CustomerSetupService implements ICustomerSetupService {
         return customerSetupDao.getAllCustomer();
     }
 
-    public void setCustomerSetupDao(CustomerSetupDao customerSetupDao) {
+    /*public void setCustomerSetupDao(CustomerSetupDao customerSetupDao) {
         this.customerSetupDao = customerSetupDao;
-    }
+    }*/
 
     public void setEmployeeSetupService(IEmployeeSetupService employeeSetupService) {
         this.employeeSetupService = employeeSetupService;
