@@ -19,13 +19,13 @@ import java.util.Properties;
 public class DataSourceConfig {
 
     @Bean(name = "sessionFactory")
-    public LocalSessionFactoryBean sessionFactory() {
-        LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
-        sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[] { "com.stl.afs.customer.domain.entity" });
-        sessionFactory.setHibernateProperties(hibernateProperties());
+    public SessionFactory sessionFactory() {
+        LocalSessionFactoryBuilder sessionBuilder = new LocalSessionFactoryBuilder(dataSource());
+        //sessionFactory.setDataSource(dataSource());
+        sessionBuilder.scanPackages(new String[] { "com.stl.afs.customer.domain.entity" });
+        sessionBuilder.addProperties(hibernateProperties());
 
-        return sessionFactory;
+        return sessionBuilder.buildSessionFactory();
     }
 
     @Bean(name = "dataSource")
